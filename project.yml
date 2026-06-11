@@ -1,0 +1,28 @@
+name: Drip
+options:
+  bundleIdPrefix: com.ayman
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  Drip:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Drip
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ayman.Drip
+        SWIFT_VERSION: 5.9
+        DEVELOPMENT_TEAM: A4C9K2ZF9A
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    plist:
+      path: Drip/Info.plist
+      properties:
+        UILaunchScreen: {}
+        NSPhotoLibraryUsageDescription: "Um Fotos deiner Klamotten hinzuzufügen"
+        NSCameraUsageDescription: "Um Fotos deiner Klamotten aufzunehmen"
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
